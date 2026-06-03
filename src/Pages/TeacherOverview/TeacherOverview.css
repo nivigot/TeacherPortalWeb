@@ -1,0 +1,79 @@
+.tov2-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 24px;
+}
+
+.tov2-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tov2-title { font-size: 22px; font-weight: 700; color: var(--text-primary); margin: 0; }
+
+.tov2-toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tov2-search {
+  border: 1px solid var(--border-input);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  min-width: 200px;
+}
+.tov2-search:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-ring); }
+
+.tov2-select {
+  border: 1px solid var(--border-input);
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  background: var(--card-bg);
+  cursor: pointer;
+}
+
+.tov2-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.tov2-card { margin-bottom: 0; }
+
+.tov2-row-selected { background: var(--primary-light) !important; }
+.tov2-row-selected td { color: var(--text-primary); }
+
+.tov2-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 22px;
+  padding: 0 7px;
+  background: var(--primary-light);
+  color: var(--primary-hover);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .tov2-panels { grid-template-columns: 1fr; gap: 0; }
+  .tov2-card { margin-bottom: 20px; }
+}
+
+@media (max-width: 768px) {
+  .tov2-container { padding: 20px 16px; }
+  .tov2-header { flex-direction: column; gap: 12px; }
+  .tov2-toolbar { width: 100%; }
+  .tov2-search { min-width: 0; flex: 1; }
+}
