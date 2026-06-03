@@ -1,4 +1,4 @@
-# TeacherPortal — Frontend 
+# TeacherPortalWeb — Frontend 
 
 A responsive single-page application for teachers to manage their students. Built with React 19 and backed by a .NET 8 REST API.
 
